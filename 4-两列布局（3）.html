@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid red;
+        }
+        .left {
+            width: 200px;
+            height: 500px;
+            background: blue;
+            float: left;
+        }
+        .right {
+            height: 500px;
+            background-color: green;
+            /* 触发BFC，当前元素内部环境与外界隔离 */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
