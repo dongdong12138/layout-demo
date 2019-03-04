@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .parent {
+            border: 1px solid #000;
+        }
+        .column {
+            width: 25%;
+            height: 500px;
+            float: left;
+            line-height: 40px;
+            text-align: center;
+        }
+        .column:first-child {
+            background: rgba(0, 0, 0, 0.2)
+        }
+        .column:nth-child(2) {
+            background: rgba(0, 0, 0, 0.4)
+        }
+        .column:nth-child(3) {
+            background: rgba(0, 0, 0, 0.6)
+        }
+        .column:last-child {
+            background: rgba(0, 0, 0, 0.8)
+        }
+    </style>
+</head>
+<body>
+    <div class="parent clearfix">
+        <div class="column">1</div>
+        <div class="column">2</div>
+        <div class="column">3</div>
+        <div class="column">4</div>
+    </div>
+</body>
+</html>
