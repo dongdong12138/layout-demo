@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .parent {
+            border: 1px solid #000;
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .left {
+            width: 30%;
+            background: lightblue;
+        }
+        .right {
+            width: 70%;
+            background: lightcoral;
+        }
+        .left, .right {
+            float: left;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent clearfix">
+        <div class="left">离离原上草</div>
+        <div class="right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ipsam distinctio eveniet harum quam nulla. Corporis expedita, nemo animi sed similique ducimus alias? Voluptatum enim eos earum laboriosam fugit id.</div>
+    </div>
+</body>
+</html>
