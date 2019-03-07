@@ -6,97 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        * {margin: 0; padding: 0;}
         header {
-            height: 40px;
-            background: lightblue;
-            position: fixed;
-            /* left + right 可以实现自适应宽度 */
-            left: 0;
-            right: 0;
-            top: 0;
-        }
-        .center {
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 40px;
-            bottom: 100px;
-            background: lightgray;
-            overflow: auto;
-        }
-        .center .left {
-            width: 300px;
-            height: 100%;
-            background: lightpink;
-            position: fixed;
-            left: 0;
-            top: 40px;
-            bottom: 100px;
-        }
-        .center .right {
-            /* height: 1000px; */
-            background: lightgreen;
-            margin-left: 300px;
-        }
-        footer {
-            height: 100px;
-            background: lightcoral;
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
+      height: 40px;
+      background: lightblue;
+      position: fixed;
+      top: 0;
+      left: 0;  /* 这里指定 left 和 right 都为 0，可以实现宽度自适应 */
+      right: 0;
+}
+main {
+      background: lightgray;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 40px;
+      bottom: 100px;
+      overflow: auto;
+}
+main .left {
+      width: 200px;
+      background: lightpink;
+      position: fixed;
+      left: 0;
+      top: 40px;
+      bottom: 100px;
+}
+main .right {
+    margin-left: 200px;
+      padding: 10px;
+      background: lightgreen;
+}
+footer {
+      height: 100px;
+      background: lightcoral;
+      position: fixed;
+      bottom: 0;
+      left: 0;  /* 这里指定 left 和 right 都为 0，可以实现宽度自适应 */
+      right: 0;
+}
     </style>
 </head>
 <body>
-    <header></header>
-    <div class="center">
-        <div class="left"></div>
-        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse animi quod dignissimos quibusdam eveniet ipsum ut maiores dolorem autem eos, ex unde nulla, libero rem voluptas vel facere illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus voluptatem at iusto quae, magni sunt odit non fugiat perspiciatis qui aperiam omnis dolores corrupti placeat molestias consequuntur iste nesciunt?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatem, amet porro, quasi doloribus rem eius soluta autem laudantium numquam culpa ipsum fuga facere veniam natus illo aperiam minus consectetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur esse dignissimos adipisci molestiae, omnis enim incidunt ipsa aspernatur, labore quae maiores eveniet blanditiis, porro sapiente veniam rerum cupiditate. Asperiores.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis id tempore officia vitae temporibus distinctio aliquid corporis assumenda facilis vel debitis dolorum, dolor nemo omnis blanditiis doloremque sequi natus!
-        </div>
-    </div>
-    <footer></footer>
+        <header>固定在上方，定高</header>
+        <main>
+                <div class="left">左列定宽</div>
+                <div class="right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat iusto excepturi beatae aliquam ratione, pariatur dicta dolorem? Esse, corrupti rerum, totam eaque veniam, in itaque aliquam magnam at ipsam quos. <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, voluptate. Harum officiis odit rem dolorem suscipit autem natus, nisi eos veniam commodi sint? Perspiciatis dolorem odio laborum, vitae blanditiis iure. <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos accusantium obcaecati amet officia saepe consequatur totam itaque expedita, explicabo nihil ab minus dolor aliquid, rem at ducimus. Nemo, aperiam exercitationem. <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, voluptas aut nulla ab obcaecati repellat itaque tenetur architecto voluptatem earum repellendus reprehenderit eligendi. Aliquid fuga omnis eligendi, porro pariatur fugiat! <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, eligendi excepturi, possimus magnam fuga mollitia porro, error aspernatur tempora odit ullam nostrum eius molestias ut. Veritatis, voluptatibus quis. Labore, eveniet. <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis voluptate sapiente perferendis aliquid. Eligendi, rem? Illum error saepe, id officiis laudantium a sint, esse cupiditate quibusdam nihil facere quisquam ducimus? <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ratione veniam eaque ab vel magnam illum corporis atque amet, autem quaerat sint deleniti aspernatur enim, soluta quibusdam rerum culpa sit! <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt minus sunt accusantium voluptatem, tempora quis eaque pariatur quo eum esse deserunt? Itaque aperiam laudantium ea nisi, totam consequatur quod. <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis harum consequuntur! Aspernatur, eveniet. Ipsam veniam cum nisi facere accusamus eveniet hic asperiores, quaerat, quasi similique ipsum est voluptates culpa? <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui totam veniam doloremque dolorem dolore quod deleniti perspiciatis? Dignissimos eum molestiae quae nobis officia totam eveniet quod beatae. Consectetur, officiis molestias. <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias porro iure sit laudantium praesentium voluptates doloribus consectetur temporibus exercitationem molestiae, at minus necessitatibus a quidem rem earum asperiores explicabo? <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quos repellendus quod delectus nulla, laboriosam distinctio dolores ex necessitatibus sit, enim a dolorem nesciunt soluta, ratione dignissimos deleniti dolor aut. <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus est quasi, porro saepe hic magni laudantium sapiente dolore! Quasi ipsam corporis omnis ipsum blanditiis nostrum? Ab modi expedita perspiciatis dolor. <br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aspernatur magni fuga. Accusamus nisi similique, explicabo quo itaque, harum odit autem est, magnam maiores unde eos possimus neque. Ad, delectus. <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae inventore, vero eligendi deleniti, unde voluptatibus omnis voluptate et debitis, tempora est odit optio minus non repellat aperiam ipsam! Iste, natus? <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit dolores expedita? Similique quae mollitia consequatur perferendis explicabo esse et deleniti fugiat, placeat adipisci! Rem illo a labore! Unde, nostrum?
+              </div>
+        </main>
+        <footer>固定在下方，定高</footer>
 </body>
 </html>
